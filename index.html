@@ -7,140 +7,173 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
+  <div class="cv">
 
-    <!-- HEADER -->
-    <header>
-      <div class="header-left">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="accent-shape"></div>
         <img src="profile_picture.jpeg" alt="Mattia Ferrari" class="profile-pic" />
-        <div class="header-name">
-          <h1>Mattia Ferrari</h1>
-          <p class="title">Computer Engineering Student</p>
-        </div>
-      </div>
-      <div class="header-contact">
-        <a href="mailto:ferrarimatty@gmail.com">ferrarimatty@gmail.com</a>
-        <a href="https://github.com/tiaferra" target="_blank" rel="noopener">github.com/tiaferra</a>
-        <a href="https://www.linkedin.com/in/mattia-ferrari-18133a213" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </header>
-
-    <hr />
-
-    <!-- ABOUT -->
-    <section>
-      <h2>About</h2>
-      <p>
-        Motivated and enthusiastic computer engineering student at the University of Bergamo,
-        with hands-on experience in both technical and industrial environments.
-        Eager to take on new challenges and grow through diverse experiences.
-      </p>
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-      <h2>Education</h2>
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">B.Sc. Computer Engineering</span>
-          <span class="entry-date">2020 — present</span>
-        </div>
-        <span class="entry-subtitle">Università degli Studi di Bergamo (UniBg)</span>
       </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Scientific High School Diploma</span>
-          <span class="entry-date">2015 — 2020</span>
-        </div>
-        <span class="entry-subtitle">Liceo Scientifico "G. Maironi Da Ponte", Bergamo</span>
-        <ul>
-          <li>Class representative at Bergamo Scienza 2019</li>
-          <li>Cambridge Assessment English — B1 Certificate (2020)</li>
-        </ul>
+      <div class="sidebar-name">
+        <h1>Mattia<br>Ferrari</h1>
+        <p class="title">Computer Engineering Student</p>
       </div>
-    </section>
 
-    <!-- WORK EXPERIENCE -->
-    <section>
-      <h2>Work Experience</h2>
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Metalworker (Part-time)</span>
-          <span class="entry-date">2021 — present</span>
-        </div>
-        <span class="entry-subtitle">MADA s.r.l.</span>
-        <ul>
-          <li>Machining of metal components using industrial equipment</li>
-          <li>Quality control and inspection of finished parts</li>
-          <li>Assembly of finished products</li>
+      <div class="sidebar-section">
+        <h2><span class="sec-icon">✉</span> Contact</h2>
+        <hr />
+        <ul class="contact-list">
+          <li>
+            <span class="badge">@</span>
+            <a href="mailto:ferrarimatty@gmail.com">ferrarimatty@gmail.com</a>
+          </li>
+          <li>
+            <span class="badge">in</span>
+            <a href="https://www.linkedin.com/in/mattia-ferrari-18133a213" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li>
+            <span class="badge">gh</span>
+            <a href="https://github.com/tiaferra" target="_blank" rel="noopener">github.com/tiaferra</a>
+          </li>
         </ul>
       </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Metalworker (Summer jobs)</span>
-          <span class="entry-date">2018 — 2019</span>
-        </div>
-        <span class="entry-subtitle">MADA s.r.l.</span>
-        <ul>
-          <li>Machining of metal components using industrial equipment</li>
-          <li>Quality control and assembly of finished products</li>
+      <div class="sidebar-section">
+        <h2><span class="sec-icon">◈</span> About Me</h2>
+        <hr />
+        <p>
+          Motivated and enthusiastic computer engineering student at the University of Bergamo,
+          with hands-on experience in industrial environments.
+          Eager to take on new challenges and grow through diverse experiences.
+        </p>
+      </div>
+
+      <div class="sidebar-section">
+        <h2><span class="sec-icon">✦</span> Skills</h2>
+        <hr />
+        <ul class="skills-list">
+          <li>C / C++</li>
+          <li>HTML · CSS · JavaScript</li>
+          <li>Adobe Photoshop</li>
+          <li>Microsoft Office</li>
+          <li>Video editing</li>
         </ul>
       </div>
+    </aside>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Mechanical Assistant Intern (PCTO)</span>
-          <span class="entry-date">June 2018 · 2 weeks</span>
-        </div>
-        <span class="entry-subtitle">Cantor Air Tech</span>
-        <ul>
-          <li>Inspection and supervision of aircraft electronic components</li>
-          <li>Classification and storage of spare parts</li>
-          <li>Assistance in aircraft repair and maintenance</li>
-        </ul>
-      </div>
-    </section>
+    <!-- RIGHT MAIN -->
+    <main class="main">
 
-    <!-- SKILLS -->
-    <section>
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <span class="skill-label">Programming</span>
-          <span class="skill-value">C · C++ · HTML · CSS · JavaScript</span>
-        </div>
-        <div class="skill-group">
-          <span class="skill-label">Software</span>
-          <span class="skill-value">Adobe Photoshop · Microsoft Office · Google Workspace</span>
-        </div>
-        <div class="skill-group">
-          <span class="skill-label">Other</span>
-          <span class="skill-value">Video editing</span>
-        </div>
-        <div class="skill-group">
-          <span class="skill-label">Languages</span>
-          <span class="skill-value">Italian (native) · English (C1 — IELTS Academic 7.5, Feb 2026)</span>
-        </div>
-      </div>
-    </section>
+      <section>
+        <h2><span class="sec-icon">▲</span> Education</h2>
+        <hr />
 
-    <!-- INTERESTS -->
-    <section>
-      <h2>Interests</h2>
-      <p class="interests">Gaming &nbsp;·&nbsp; Music &nbsp;·&nbsp; Cooking &nbsp;·&nbsp; Magic tricks &nbsp;·&nbsp; Sports & fitness</p>
-    </section>
+        <div class="entry">
+          <div class="dot"></div>
+          <div class="entry-body">
+            <div class="entry-header">
+              <span class="entry-title">B.Sc. Computer Engineering</span>
+              <span class="entry-date">2020 — present</span>
+            </div>
+            <div class="entry-sub">Università degli Studi di Bergamo (UniBg)</div>
+          </div>
+        </div>
 
-    <footer>
-      <p>Last updated: March 2026</p>
-    </footer>
+        <div class="entry">
+          <div class="dot"></div>
+          <div class="entry-body">
+            <div class="entry-header">
+              <span class="entry-title">Scientific High School Diploma</span>
+              <span class="entry-date">2015 — 2020</span>
+            </div>
+            <div class="entry-sub">Liceo Scientifico "G. Maironi Da Ponte", Bergamo</div>
+            <p class="entry-desc">
+              Class representative at Bergamo Scienza 2019.
+              Cambridge Assessment English B1 Certificate (2020).
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <h2><span class="sec-icon">▶</span> Experience</h2>
+        <hr />
+
+        <div class="entry">
+          <div class="dot"></div>
+          <div class="entry-body">
+            <div class="entry-header">
+              <span class="entry-title">Metalworker — Part-time</span>
+              <span class="entry-date">2021 — present</span>
+            </div>
+            <div class="entry-sub">MADA s.r.l.</div>
+            <p class="entry-desc">
+              Machining of metal components using industrial equipment.
+              Quality control and inspection of finished parts.
+              Assembly of finished products.
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="dot"></div>
+          <div class="entry-body">
+            <div class="entry-header">
+              <span class="entry-title">Metalworker — Summer jobs</span>
+              <span class="entry-date">2018 — 2019</span>
+            </div>
+            <div class="entry-sub">MADA s.r.l.</div>
+            <p class="entry-desc">
+              Machining of metal components, quality control
+              and assembly of finished products.
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="dot"></div>
+          <div class="entry-body">
+            <div class="entry-header">
+              <span class="entry-title">Mechanical Assistant Intern (PCTO)</span>
+              <span class="entry-date">June 2018 · 2 weeks</span>
+            </div>
+            <div class="entry-sub">Cantor Air Tech</div>
+            <p class="entry-desc">
+              Inspection and supervision of aircraft electronic components.
+              Classification and storage of spare parts.
+              Assistance in aircraft repair and maintenance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="sec-icon">◉</span> Languages</h2>
+        <hr />
+        <div class="lang-grid">
+          <div class="lang-item">
+            <span class="lang-name">Italian</span>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">English</span>
+            <span class="lang-level">C1 — IELTS Academic 7.5 (Feb 2026)</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="sec-icon">★</span> Interests</h2>
+        <hr />
+        <p class="interests">Gaming &nbsp;·&nbsp; Music &nbsp;·&nbsp; Cooking &nbsp;·&nbsp; Magic tricks &nbsp;·&nbsp; Sports & fitness</p>
+      </section>
+
+    </main>
   </div>
 </body>
 </html>
