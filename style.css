@@ -31,9 +31,23 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   gap: 24px;
   margin-bottom: 32px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 header h1 {
@@ -187,6 +201,11 @@ footer {
   }
 
   header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
     flex-direction: column;
     align-items: flex-start;
   }
