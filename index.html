@@ -1,145 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-    <title>Personal Portfolio Website</title>
-    <!--external css-->
-    <link rel="stylesheet" href="style.css">
-    <!--font awsome cdn for font icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="profile-card"> 
-        <div class="profile-pic">
-          <img src="images/Foto profilo.jpg" alt="user avatar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <title>Mattia Ferrari Portfolio</title>
+  <!--external css-->
+  <link rel="stylesheet" href="style.css">
+  <!--font awsome cdn for font icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-m"></i>
+          <div class="logo-text">Mattia Ferrari</div>
         </div>
-
-        <div class="profile-details">
-          <div class="intro">
-            <h2>Mattia Ferrari</h2>
-            <h4>Dottore in Ingegneria Informatica</h4> 
-            <div class="social">
-              <a href="#"><i class="fab fa-github" style="color:var(--blue-primary)"></i></a>
-              <a href="#"><i class="fab fa-linkedin" style="color:var(--blue-light)"></i></a>
-              <!-- <a href="#"><i class="fab fa-indeed"></i></a> 
-              <a href="#"><i class="fab fa-gmail"></i></a> -->
-            </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-
-         <div class="contact-info">
-            <div class="row">
-              <div class="icon">
-                <i class="fa fa-phone" style="color:var(--blue-primary)"></i>
-              </div>
-              <div class="content">
-                <span>Phone</span>
-                <h5>+39 333 378 7160</h5>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="icon">
-                <i class="fa fa-envelope-open" style="color:var(--blue-light)"></i>
-              </div>
-              <div class="content">
-                <span>Email</span>
-                <h5>ferrarimatt@gmail.com</h5>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="icon">
-                <i class="fa fa-map-marker" style="color:var(--blue-deep)"></i>
-              </div>
-              <div class="content">
-                <span>Location</span>
-                <h5>Bergamo, Italia</h5>
-              </div>
-            </div>
-          </div>
-        
-          <div>
-            <button class="download-btn">Download CV</button>
-          </div>
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="hero-pic">
+          <img src="images/Adobe Express - file.jpg" alt="profile pic">
         </div>
-      </div>
-<!--about session-->
-      <div class="about">
-        <h1>About Me</h1>
-
-        <p>Neolaureato in Ingegneria Informatica, durante gli studi ho sviluppato un forte interesse per i sistemi operativi e le reti,
-         culminato in una tesi incentrata su un progetto che analizza e monitora il comportamento del sistema a livello kernel.
-        </p>
-
-        <p> Sono inoltre appassionato di cybersicurezza, ambito nel quale desidero orientare il mio percorso di studio magistrale e professionale.</p>
-
-        <h2>Progetti Universitari</h2>
-        <div class="work">
-          <div class="workbox">
-            <div class="icon">
-             <!-- <img src="images/" alt=""> -->
-            </div>
-            <div class="desc">
-              <h3>Android eBPF Monitor - Tesi di Laurea Triennale</h3>
-
-              <p>Sistema di monitoraggio e osservabilità per ambienti Android (Cuttlefish) basato su eBPF e bpftrace, con un layer di orchestrazione in Python.
-               Permette di osservare eventi di sistema a basso livello (syscall, processi, file, rete),
-               correlare attività tra applicazioni e generare report di sicurezza strutturati</p>
-
-            </div>
+        <div class="hero-text">
+          <h5>Ciao Io sono <span class="input"></span></h5>
+          <h1>Mattia Ferrari</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque orci in consectetur efficitur. 
+          Curabitur iaculis metus in nulla mollis dictum. Donec mollis tempor faucibus. In a mollis ante, ut congue mauris. Donec et tellus vel eros posuere volutpat.
+          Integer congue gravida lacus, id suscipit massa pellentesque a.</p>
+          <div class="btn-group">
+            <a href="#" class="btn active">Download CV</a>
+            <a href="#" class="btn">Contact</a>
           </div>
-
-          <div class="workbox">
-            <div class="icon">
-             <!-- <img src="images/" alt=""> -->
-            </div>
-            <div class="desc">
-              <h3>Android eBPF Monitor - Tesi di Laurea Triennale</h3>
-
-              <p>Sistema di monitoraggio e osservabilità per ambienti Android (Cuttlefish) basato su eBPF e bpftrace, con un layer di orchestrazione in Python.
-               Permette di osservare eventi di sistema a basso livello (syscall, processi, file, rete),
-               correlare attività tra applicazioni e generare report di sicurezza strutturati</p>
-               
-            </div>
-          </div>
-
-          <div class="workbox">
-            <div class="icon">
-             <!-- <img src="images/" alt=""> -->
-            </div>
-            <div class="desc">
-              <h3>Android eBPF Monitor - Tesi di Laurea Triennale</h3>
-
-              <p>Sistema di monitoraggio e osservabilità per ambienti Android (Cuttlefish) basato su eBPF e bpftrace, con un layer di orchestrazione in Python.
-               Permette di osservare eventi di sistema a basso livello (syscall, processi, file, rete),
-               correlare attività tra applicazioni e generare report di sicurezza strutturati</p>
-               
-            </div>
-          </div>
-
-          <div class="workbox">
-            <div class="icon">
-             <!-- <img src="images/" alt=""> -->
-            </div>
-            <div class="desc">
-              <h3>Android eBPF Monitor - Tesi di Laurea Triennale</h3>
-
-              <p>Sistema di monitoraggio e osservabilità per ambienti Android (Cuttlefish) basato su eBPF e bpftrace, con un layer di orchestrazione in Python.
-               Permette di osservare eventi di sistema a basso livello (syscall, processi, file, rete),
-               correlare attività tra applicazioni e generare report di sicurezza strutturati</p>
-               
-            </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
           </div>
         </div>
 
       </div>
     </div>
-  </body>
+  </div>
+  <!-- typed js for typing text effect -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    /** creating button click show hide **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+
+    var typed=new Typed(".input",{
+      strings:["Frontend Developer","UX Designer","Web Developer"],
+      typedSpeed: 70,
+      backSpeed: 55,
+      loop: true
+    })
+  </script>
+</body>
 </html>
