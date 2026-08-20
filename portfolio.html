@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <title>Mattia Ferrari Portfolio</title>
+  <!--external css-->
+  <link rel="stylesheet" href="style.css">
+  <!--font awsome cdn for font icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-m"></i>
+          <div class="logo-text">Mattia Ferrari</div>
+        </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container resume-container">
+        <div class="resume-content">
+
+          <section class="resume-intro">
+            <h5>My <span>Portfolio</span></h5>
+            <h1>Progetti Universitari</h1>
+            <p>Una selezione dei progetti sviluppati durante il mio percorso di studi in Ingegneria Informatica.</p>
+          </section>
+
+          <div class="portfolio-grid">
+
+            <div class="portfolio-card">
+              <span class="portfolio-tag">Tesi di Laurea Triennale</span>
+              <h3>Android eBPF Monitor</h3>
+              <p>Sistema di monitoraggio e osservabilità per ambienti Android (Cuttlefish) basato su eBPF e bpftrace. Permette di osservare eventi di sistema a basso livello (syscall, processi, file, rete), correlare attività tra applicazioni e generare report di sicurezza strutturati.</p>
+              <a href="https://github.com/tiaferra/android-ebpf-monitor" target="_blank" rel="noopener" class="portfolio-link"><i class="fa-brands fa-github"></i> github.com/tiaferra/android-ebpf-monitor</a>
+            </div>
+
+            <div class="portfolio-card">
+              <span class="portfolio-tag">Ingegneria del Software</span>
+              <h3>MAY</h3>
+              <p>Applicazione di rendering 3D sviluppata in Java come progetto di gruppo per il corso di Ingegneria del Software. Il programma permette di caricare modelli 3D e visualizzarli in tempo reale.</p>
+              <a href="https://github.com/yousef-shoeib/MAY" target="_blank" rel="noopener" class="portfolio-link"><i class="fa-brands fa-github"></i> github.com/yousef-shoeib/MAY</a>
+            </div>
+
+            <div class="portfolio-card">
+              <span class="portfolio-tag">Programmazione Web</span>
+              <h3>Ricettario Web</h3>
+              <p>Applicazione web sviluppata in coppia per il corso di Programmazione Web. Ricettario digitale realizzato con Django, SQLite e Bootstrap 5, con importazione dati da file Excel/CSV e interfaccia responsive per la visualizzazione e ricerca delle ricette.</p>
+              <a href="https://github.com/tiaferra/404NotFounders" target="_blank" rel="noopener" class="portfolio-link"><i class="fa-brands fa-github"></i> github.com/tiaferra/404NotFounders</a>
+            </div>
+
+            <div class="portfolio-card">
+              <span class="portfolio-tag">Programmazione ad Oggetti</span>
+              <h3>My Shelfie</h3>
+              <p>Implementazione del gioco da tavolo "My Shelfie" sviluppata in Java per il corso di Programmazione ad Oggetti. Supporta fino a 4 giocatori in locale con interfaccia grafica interattiva. Progetto di gruppo realizzato con altri 4 colleghi.</p>
+              <a href="https://github.com/Thomas-Fabbris/Group_08" target="_blank" rel="noopener" class="portfolio-link"><i class="fa-brands fa-github"></i> github.com/Thomas-Fabbris/Group_08</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- typed js for typing text effect -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    /** creating button click show hide **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+  </script>
+</body>
+</html>

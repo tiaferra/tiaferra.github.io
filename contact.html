@@ -36,30 +36,38 @@
           </ul>
         </nav>
       </header>
-      <div class="container">
-        <div class="hero-pic">
-          <img src="images/Adobe Express - file.jpg" alt="profile pic">
-        </div>
-        <div class="hero-text">
-          <h5>Ciao Io sono <span class="input"></span></h5>
-          <h1>Mattia Ferrari</h1>
-          <p>Neolaureato in Ingegneria Informatica, durante gli studi ho sviluppato un forte interesse per i sistemi operativi e le reti,
-           culminato in una tesi incentrata su un progetto che analizza e monitora il comportamento del sistema a livello kernel.
-           Sono inoltre appassionato di cybersicurezza, ambito nel quale desidero orientare il mio percorso di studio magistrale e professionale.
-          </p>
-          <div class="btn-group">
-            <a href="files/Mattia Ferrari CV.pdf" download="Mattia_Ferrari_CV.pdf" class="btn active">Download CV</a>
-            <a href="contact.html" class="btn">Contact</a>
-          </div>
-          <div class="social">
-            <!--<a href="#"><i class="fa-brands fa-facebook"></i></a>-->
-            <a href="https://www.linkedin.com/in/mattiaferrari120501"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/_tiaaaa._"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/tiaferra"><i class="fa-brands fa-github"></i></a>
-            <!--<a href="#"><i class="fa-brands fa-pinterest"></i></a>-->
-          </div>
-        </div>
+      <div class="container resume-container">
+        <div class="resume-content">
 
+          <section class="resume-intro">
+            <h5>Get In <span>Touch</span></h5>
+            <h1>Contattami</h1>
+            <p>Per collaborazioni o opportunità di lavoro puoi raggiungermi tramite uno di questi canali.</p>
+          </section>
+
+          <div class="contact-grid">
+
+            <a href="tel:+393333787160" class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h4>Telefono</h4>
+              <span>+39 333 378 7160</span>
+            </a>
+
+            <a href="mailto:ferrarimatty@gmail.com" class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <h4>Email</h4>
+              <span>ferrarimatty@gmail.com</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mattiaferrari120501" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <h4>LinkedIn</h4>
+              <span>Profilo LinkedIn</span>
+            </a>
+
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -76,12 +84,6 @@
       nav.classList.toggle("open");
     })
 
-    var typed=new Typed(".input",{
-      strings:["Sistemista","Sportivo","Ingegnere Informatico"],
-      typedSpeed: 70,
-      backSpeed: 55,
-      loop: true
-    })
   </script>
 </body>
 </html>

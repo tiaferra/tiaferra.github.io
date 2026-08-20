@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <title>Mattia Ferrari Portfolio</title>
+  <!--external css-->
+  <link rel="stylesheet" href="style.css">
+  <!--font awsome cdn for font icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-m"></i>
+          <div class="logo-text">Mattia Ferrari</div>
+        </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container resume-container">
+        <div class="resume-content">
+
+          <section class="resume-intro">
+            <h5>My <span>Resume</span></h5>
+            <h1>Dottore in Ingegneria Informatica</h1>
+            <p>Neolaureato in Ingegneria Informatica, durante gli studi ho sviluppato un forte interesse per i sistemi operativi e le reti, culminato in una tesi incentrata su un progetto che analizza e monitora il comportamento del sistema a livello kernel. Sono inoltre appassionato di cybersicurezza, ambito nel quale desidero orientare il mio percorso di studio magistrale e professionale.</p>
+            <div class="btn-group">
+              <a href="files/Mattia_Ferrari_CV.pdf" download="Mattia_Ferrari_CV.pdf" class="btn active"><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+          </section>
+
+          <div class="resume-grid">
+
+            <section class="resume-block">
+              <h2><i class="fa-solid fa-briefcase"></i> Esperienza</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">2021 — Presente</span>
+                  <h3>Operatore metalmeccanico — Part-time</h3>
+                  <span class="timeline-place">MADA s.r.l.</span>
+                  <p>Lavorazione di componenti metallici con macchinari industriali per taglio laser 3D. Lettura e interpretazione di disegni tecnici. Software CAD: FastSuite e Solid Edge.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="resume-block">
+              <h2><i class="fa-solid fa-graduation-cap"></i> Istruzione</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">2021 — 2025</span>
+                  <h3>Laurea Triennale in Ingegneria Informatica</h3>
+                  <span class="timeline-place">Università degli Studi di Bergamo (UniBg)</span>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">2015 — 2020</span>
+                  <h3>Diploma di Liceo Scientifico</h3>
+                  <span class="timeline-place">Liceo Scientifico "G. Maironi Da Ponte", Bergamo</span>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <section class="resume-block skills-block">
+            <h2><i class="fa-solid fa-code"></i> Competenze</h2>
+            <div class="skill-group">
+              <h4>Tecniche</h4>
+              <div class="tag-list">
+                <span class="tag">C / C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">HTML · CSS · JavaScript</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Basi di Linux</span>
+                <span class="tag">eBPF (bpftrace)</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Lingue</h4>
+              <div class="tag-list">
+                <span class="tag">Italiano — madrelingua</span>
+                <span class="tag">Inglese — C1 (IELTS Academic 7.5, Feb 2026)</span>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- typed js for typing text effect -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    /** creating button click show hide **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+  </script>
+</body>
+</html>
